@@ -1,2 +1,6 @@
-# CodingTest_js
-프론트앤드 직무의 필수인 JavaScript로 코딩테스트 준비 
+# 프론트앤드 직무의 필수인 JavaScript로 코딩테스트 준비
+
+6월 25일 금요일 시작
+- 완전 기초 다지기
+- reduce 함수 
+
