@@ -99,4 +99,14 @@ function addtwo2(numbers) {
 console.log(addtwo2([2,1,3,4,1]));
 
 
+// 두 정수 사이의 합
+
+function adder(a, b){
+    var answer = 0;
+    for (let i = Math.min(a,b); i <= Math.max(a,b); i++){
+        answer += i;
+    }
+    return answer;
+}
+
 
