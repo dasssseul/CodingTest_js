@@ -5,4 +5,12 @@
 - 프로그래머스 level1 4문제 완료 (음양 더하기, 내적, 두 개 뽑아서 더하기, k번째 수)
 - reduce, slice, sort, push, sort, map, set 학습
 
+6월 26일 토요일
+- 프로그래머스 level1 1문제 완료 (두 정수 사이의 합)
+- Math.max(), Math.min()
+
+6월 28일 월요일
+- 프로그래머스 level1 1문제 완료 (같은 숫자는 싫어)
+- filter()
+
 
