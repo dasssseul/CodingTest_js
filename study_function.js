@@ -110,3 +110,38 @@ function adder(a, b){
 }
 
 
+// 같은 숫자는 싫어
+
+// 나의 풀이 1
+function solution(arr)
+{
+    var answer = [];
+    let tmp = -1;
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] != tmp){
+            answer.push(arr[i]);
+            tmp = arr[i];
+        }
+    }
+    return answer;
+}
+
+// 나의 풀이 2
+function solution(arr)
+{
+    var answer = [];
+    for (let i=0; i<arr.length;i++){
+        if(arr[i] != arr[i+1]){
+            answer.push(arr[i])
+        }
+    }     
+    return answer;
+}
+
+// 추천 풀이_filter
+function solution(arr)
+{
+    return arr.filter((value, index) => value != arr[index+1]);
+}
+
+
