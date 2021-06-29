@@ -113,7 +113,7 @@ function adder(a, b){
 // 같은 숫자는 싫어
 
 // 나의 풀이 1
-function solution(arr)
+function nosame(arr)
 {
     var answer = [];
     let tmp = -1;
@@ -127,7 +127,7 @@ function solution(arr)
 }
 
 // 나의 풀이 2
-function solution(arr)
+function nosame2(arr)
 {
     var answer = [];
     for (let i=0; i<arr.length;i++){
@@ -139,9 +139,28 @@ function solution(arr)
 }
 
 // 추천 풀이_filter
-function solution(arr)
+function nosame3(arr)
 {
     return arr.filter((value, index) => value != arr[index+1]);
 }
 
+
+// 수박수박수박수박수박수?
+
+// 나의 풀이 
+function subak(n) {
+    var word = '수박';
+    var answer = '';
+    for (let i=0; i < n; i++){
+        let a = i%2;
+        answer += word[a];
+    }
+    return answer;
+};
+
+
+// 추천 풀이_repeat
+function subak2(n) {
+    return '수박'.repeat(n/2) + (n%2 == 1 ? '수':'')
+};
 
