@@ -164,3 +164,11 @@ function subak2(n) {
     return '수박'.repeat(n/2) + (n%2 == 1 ? '수':'')
 };
 
+
+// 가운데 글자 가져오기
+
+function middleS(s) {
+    var index = Math.ceil(s.length/2)-1;
+    return s.substr(index, (s.length%2 == 0 ? 2:1));
+};
+
