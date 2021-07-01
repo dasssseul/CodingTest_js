@@ -3,7 +3,7 @@
 6월 25일 금요일 시작
 - 완전 기초 다지기
 - [level1] 음양 더하기, 내적, 두 개 뽑아서 더하기, k번째 수 완료
-- reduce, slice, sort, push, sort, map, set 학습
+- reduce, slice, sort, push, map, set 
 
 6월 26일 토요일
 - [level1] 두 정수 사이의 합 완료
@@ -21,3 +21,6 @@
 - [level1] 가운데 글자 가져오기 완료
 - substr(), Math.ceil()
 
+7월 1일 목요일
+- [level2] 구명보트, 카펫 완료
+- sort()
