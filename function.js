@@ -28,7 +28,7 @@ c1 = b.split("?", 2);
 console.log(c1); // ["a", "b"]
 
 
-// 올림 함수
+// [올림 함수]
 
 const number = 3;
 
@@ -36,3 +36,52 @@ const number = 3;
 console.log(number/2) // 1.5
 console.log(Math.ceil(number/2)) // 2
 
+
+// [정렬 함수]
+console.clear();
+
+// return 값이 양수라면 a와 b의 순서 변경
+// return 값이 음수라면 a와 b의 순서 변경 x
+// return 값이 0이라면 그대로
+
+const array = [3, 7, 6, 9, 2]
+
+// 오름차순 정렬
+array.sort(function(a,b) {
+    return a-b;
+});
+
+// arrow function 표현
+array.sort((a,b) => a-b);
+
+console.log(array); // 출력: [2, 3, 6, 7, 9]
+
+// 내림차순 정렬
+array.sort(function(a,b) {
+    return b-a;
+});
+
+// arrow function 표현
+array.sort((a,b) => b-a);
+
+console.log(array); // 출력 : [9, 7, 6, 3, 2]
+
+// object 정렬
+var friends = [
+    { name : "다하", age : 26 },
+    { name : "다슬", age : 20 },
+    { name : "성희", age : 23 },
+    { name : "성주", age : 21 }
+];
+
+friends.sort(function(a, b){
+    return b.age - a.age;
+});
+
+console.log(friends);
+
+// friends.sort(function(a,b){
+//     return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
+// });
+
+// console.log(friends);
