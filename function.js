@@ -41,7 +41,7 @@ console.log(Math.ceil(number/2)) // 2
 console.clear();
 
 // return 값이 양수라면 a와 b의 순서 변경
-// return 값이 음수라면 a와 b의 순서 변경 x
+// return 값이 음수라면 그대로
 // return 값이 0이라면 그대로
 
 const array = [3, 7, 6, 9, 2]
@@ -85,3 +85,21 @@ console.log(friends);
 // });
 
 // console.log(friends);
+
+
+// map 함수
+console.clear();
+
+const ar = [[1, 2, 3], [5, 6, 7]];
+const br = [[2, 4, 6], [1, 3, 5]];
+
+const a1 = ar.map(function(arr, i){
+    console.log(`idx : ${i}, number : ${arr}`);
+});
+
+const b11 = ar.map(function(arr, i){
+    const b22 = arr.map(function(brr, j){
+        console.log(`idx : ${j}, number : ${brr}`);
+    });
+});
+
