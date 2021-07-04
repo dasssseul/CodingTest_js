@@ -32,3 +32,7 @@
 7월 3일 토요일
 - [level2] 기능개발 완료
 - Math.ceil(), push()
+
+7월 4일 일요일
+- [level1] 행렬의 덧셈 완료
+- map(value, index, array)
