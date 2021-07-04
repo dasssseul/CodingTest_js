@@ -172,3 +172,10 @@ function middleS(s) {
     return s.substr(index, (s.length%2 == 0 ? 2:1));
 };
 
+
+// 행렬의 덧셈
+
+function solution(arr1, arr2) {
+    var answer = arr1.map((arr, i) => arr.map((b, j) => b + arr2[i][j])); 
+    return answer;
+}
