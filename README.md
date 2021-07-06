@@ -36,3 +36,8 @@
 7월 4일 일요일
 - [level1] 행렬의 덧셈 완료
 - map(value, index, array)
+
+7월 6일 화요일
+- [level1] 시저 암호 완료
+- 문자열.charCodeAt(인덱스), String.fromCharCode(아스키코드 번호)
+
