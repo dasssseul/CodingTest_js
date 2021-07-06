@@ -179,3 +179,45 @@ function solution(arr1, arr2) {
     var answer = arr1.map((arr, i) => arr.map((b, j) => b + arr2[i][j])); 
     return answer;
 }
+
+
+// 시저 암호
+
+// 나의 풀이
+
+function solution(s, n) {
+    var answer = '';
+    for (let i = 0; i < s.length; i++){
+        if (s[i] === " "){
+            answer += " ";
+            continue
+        }
+        let asc = s.charCodeAt(i);
+        let asc2 = asc + n;
+        if (65 <= asc && asc <= 90){
+            if (90 < asc2){
+                asc2 = asc2 - 90 + 64
+            }
+        }else if (97 <= asc && 122 >= asc){
+            if (122 < asc2){
+                asc2 = asc2 - 122 + 96
+            }
+        }
+        answer += String.fromCharCode(asc2)
+    } return answer;
+}
+
+// 추천 풀이
+
+function solution(s, n) {
+    var answer = '';
+    for (var i=0; i<s.length;i++){
+        if (s[i] == ' '){
+            answer += ' '
+       }else{
+        answer += String.fromCharCode( (s.charCodeAt(i)>90)?(s.charCodeAt(i)+n-97)%26+97 : (s.charCodeAt(i)+n-65)%26+65 )        
+       }
+  }return answer;
+}
+
+ 
