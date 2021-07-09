@@ -220,4 +220,20 @@ function solution(s, n) {
   }return answer;
 }
 
+
+// 예산
+
+// 나의 풀이 
+
+function solution(d, budget) {
+    var answer = 0;
+    d.sort((a,b) => a-b)
+    for (let i=0; i<d.length; i++){
+        budget -= d[i];
+        if (budget >= 0){
+            answer ++;
+        }
+    }return answer
+}
+    
  
