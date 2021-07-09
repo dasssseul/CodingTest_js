@@ -41,3 +41,6 @@
 - [level1] 시저 암호 완료
 - 문자열.charCodeAt(인덱스), String.fromCharCode(아스키코드 번호)
 
+7월 9일 금요일
+- [level1] 예산 완료
+- sort()
