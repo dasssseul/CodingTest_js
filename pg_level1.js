@@ -235,5 +235,27 @@ function solution(d, budget) {
         }
     }return answer
 }
-    
+
+
+// 최솟값 만들기
+
+// 나의 풀이
+
+function solution(A,B){
+    A.sort((a, b) => a-b);
+    B.sort((a, b) => b-a);
+    var result = A.reduce(function(acc, curr, i){
+        acc += curr * B[i]
+        return acc
+    },0);
+    return result;
+}
+
+// 추천 풀이
+
+function solution(A,B){
+    A.sort((a, b) => a-b);
+    B.sort((a, b) => b-a);
+    return A.reduce((acc, curr, i) => acc+curr*B[i], 0); 
+}
  
