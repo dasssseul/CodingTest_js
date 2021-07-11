@@ -103,3 +103,14 @@ const b11 = ar.map(function(arr, i){
     });
 });
 
+
+// map, flat, flatmap 함수
+const arr1 = ['a', 'b', 'c'];
+const arr2 = ['1', '2', '3'];
+
+const arr12 = arr1.map((value, index) => [value, arr2[index]]);
+const arr12Fm = arr1.flatMap((value, index)=>[value, arr2[index]]);
+
+console.log(arr12);
+console.log(arr12.flat());
+console.log(arr12Fm);
