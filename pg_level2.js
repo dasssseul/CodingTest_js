@@ -28,3 +28,18 @@ function solution(n) {
         }
     }return answer
 }
+
+
+// 멀쩡한 사각형
+
+function gcd(a, b){
+    while (b > 0){
+        let temp = a%b
+        a = b
+        b = temp
+    }
+    return a;
+}
+function solution(w, h) {
+    return w*h - (w+h-gcd(w, h));
+}
