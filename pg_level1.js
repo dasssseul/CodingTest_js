@@ -259,3 +259,29 @@ function solution(A,B){
     return A.reduce((acc, curr, i) => acc+curr*B[i], 0); 
 }
  
+
+// 소수 만들기
+
+function isPrime(n){
+    for (let i=2; i < Math.ceil(n**0.5)+1; i++){
+        if (n%i === 0){
+            return false;
+        }
+    }return true;
+}
+
+function solution(nums) {
+    let sumNums = 0;
+    let answer = 0;
+    for (let i=0; i<nums.length-2; i++){
+        for (let j=i+1; j<nums.length-1; j++){
+            for(let k= j+1; k<nums.length; k++){
+                sumNums = nums[i] + nums[j] + nums[k]
+                if (isPrime(sumNums)===true){
+                    answer += 1;
+                }
+            }
+        }
+    }
+    return answer;
+}
