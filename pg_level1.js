@@ -285,3 +285,41 @@ function solution(nums) {
     }
     return answer;
 }
+
+
+// 숫자 문자열과 영단어
+
+// 나의 풀이
+
+function solution(s) {
+    // replace 함수 이용 
+    // /문자/g : 발생할 모든 pattern에 대한 전역 검색
+    s = s.replace(/zero/g, 0);
+    s = s.replace(/one/g, 1);
+    s = s.replace(/two/g, 2);
+    s = s.replace(/three/g, 3);
+    s = s.replace(/four/g, 4);
+    s = s.replace(/five/g, 5);
+    s = s.replace(/six/g, 6);
+    s = s.replace(/seven/g, 7);
+    s = s.replace(/eight/g, 8);
+    s = s.replace(/nine/g, 9);
+    return Number(s);
+}
+
+
+// 추천 풀이
+
+function solution(s) {
+    let numbers = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+    var answer = s;
+
+    for(let i=0; i< numbers.length; i++) {
+        // answer을 numbers[i]로 쪼갠 후 
+        let arr = answer.split(numbers[i]);
+        // 쪼개진 조각을 숫자(인덱스 i)로 연결하여 붙이기
+        answer = arr.join(i);
+    }
+    // 숫자로 변환 후 출력
+    return Number(answer);
+}
